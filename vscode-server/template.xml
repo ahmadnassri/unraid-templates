@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/ahmadnassri/unraid-templates/issues</Support>
+  <Support>https://forums.unraid.net/topic/126755-support-ahmadnassris-templates/</Support>
   <Project>https://github.com/ahmadnassri/docker-vscode-server</Project>
   <Overview>
 The Visual Studio Code Server is a service you can run on a remote development machine, like your desktop PC or a virtual machine (VM). It allows you to securely connect to that remote machine from anywhere through a vscode.dev URL, without the requirement of SSH.
