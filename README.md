@@ -12,4 +12,4 @@ Mostly software development tools and utilities.
 > Twitter: [@AhmadNassri](https://twitter.com/AhmadNassri)
 
 [license-url]: LICENSE
-[license-img]: https://badgen.net/github/license/unraid-templates
+[license-img]: https://badgen.net/github/license/ahmadnassri/unraid-templates
