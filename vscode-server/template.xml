@@ -1,29 +1,36 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>VS Code</Name>
+  <Name>VSCode</Name>
   <Repository>ahmadnassri/vscode-server</Repository>
   <Registry>https://hub.docker.com/r/ahmadnassri/vscode-server/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
-  <Privileged>false</Privileged>
+  <Privileged>true</Privileged>
   <Support>https://forums.unraid.net/topic/126755-support-ahmadnassris-templates/</Support>
   <Project>https://github.com/ahmadnassri/docker-vscode-server</Project>
-  <Overview>
-The Visual Studio Code Server is a service you can run on a remote development machine, like your desktop PC or a virtual machine (VM). It allows you to securely connect to that remote machine from anywhere through a vscode.dev URL, without the requirement of SSH.
-
-This is simply a containerized version of the VS Code Server.
-
-Learn more on the official documentation: https://code.visualstudio.com/docs/remote/vscode-server
+  <Overview>&#xD;
+The Visual Studio Code Server is a service you can run on a remote development machine, like your desktop PC or a virtual machine (VM). It allows you to securely connect to that remote machine from anywhere through a vscode.dev URL, without the requirement of SSH.&#xD;
+&#xD;
+This is simply a containerized version of the VS Code Server.&#xD;
+&#xD;
+Learn more on the official documentation: https://code.visualstudio.com/docs/remote/vscode-server&#xD;
   </Overview>
   <Category>Tools: Productivity:</Category>
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
   <Icon>https://code.visualstudio.com/apple-touch-icon.png</Icon>
-  <ExtraParams>--cap-add=IPC_LOCK -u 1000</ExtraParams>
+  <ExtraParams>--cap-add=IPC_LOCK</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1659478303</DateInstalled>
   <DonateText>Buy me a coffee</DonateText>
   <DonateLink>https://github.com/sponsors/ahmadnassri</DonateLink>
   <Requires/>
-  <Config Name="Port" Target="8000" Default="8000" Mode="tcp" Description="The port for the server to listen on" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
-  <Config Name="Projects" Target="/home/vscode/projects" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="Keyring Passphrase" Target="VSCODE_KEYRING_PASS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Port" Target="8000" Default="8000" Mode="tcp" Description="The port for the server to listen on" Type="Port" Display="always" Required="false" Mask="false">9000</Config>
+  <Config Name="Projects" Target="/projects" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/projects</Config>
+  <Config Name="Keyring Passphrase" Target="VSCODE_KEYRING_PASS " Default="" Mode="" Description="set a keyring passphrase (to persist account login)" Type="Variable" Display="always" Required="true" Mask="true">sakalambo</Config>
+  <Config Name="Appdata" Target="/root/.vscode-server" Default="{2}" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/vscode-server/.vscode-server</Config>
+  <Config Name="PUID" Target="PUID" Default="90" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="000" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
 </Container>
