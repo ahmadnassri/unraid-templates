@@ -5,7 +5,7 @@ Mostly software development tools and utilities.
 [![license][license-img]][license-url]
 
 - [Verdaccio](./verdaccio/): A lightweight Node.js private proxy registry
-- [VS Code Server](./vscode-server/): A lightweight Node.js private proxy registry
+- [VS Code Server](./vscode-server/): The Visual Studio Code Server
 
 ----
 > Author: [Ahmad Nassri](https://www.ahmadnassri.com/) &bull;
