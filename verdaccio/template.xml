@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Verdaccio</Name>
+  <Repository>verdaccio/verdaccio</Repository>
+  <Registry>https://hub.docker.com/r/verdaccio/verdaccio/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/ahmadnassri/unraid-templates/issues</Support>
+  <Project>https://verdaccio.org/</Project>
+  <Overview>
+Verdaccio is a simple, zero-config-required local private NPM registry. No need for an entire database just to get started. Verdaccio comes out of the box with its own tiny database, and the ability to proxy other registries (eg. npmjs.org), also introduces caching the downloaded modules along the way. For those who are looking to extend their storage capabilities, Verdaccio supports various community-made plugins to hook into services such as Amazon's S3, Google Cloud Storage or create your own plugin.
+  </Overview>
+  <Category>Tools: Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:4873]</WebUI>
+  <Icon>https://verdaccio.org/img/logo/uk/verdaccio-tiny-uk-no-bg.png</Icon>
+  <ExtraParams/>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://github.com/sponsors/ahmadnassri</DonateLink>
+  <Requires/>
+  <Config Name="Port" Target="4873" Default="4873" Mode="tcp" Description="The port for the server to listen on" Type="Port" Display="always" Required="false" Mask="false">4873</Config>
+  <Config Name="Config Directory" Target="/verdaccio/conf" Default="" Mode="rw" Description="Directory where config.yaml is stored, leave empty to use default" Type="Path" Display="advanced" Required="false" Mask="false"></Config>
+</Container>
