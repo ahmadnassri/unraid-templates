@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://github.com/ahmadnassri.png</Icon>
+  <Profile>
+    Developer applications, tools and utilities for Unraid
+  </Profile>
+  <DonateLink>https://github.com/sponsors/ahmadnassri</DonateLink>
+  <DonateText>Buy me a coffee</DonateText>
+</Maintainer>
