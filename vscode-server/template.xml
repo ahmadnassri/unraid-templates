@@ -28,7 +28,7 @@ Learn more on the official documentation: https://code.visualstudio.com/docs/rem
   <Requires/>
   <Config Name="Port" Target="8000" Default="8000" Mode="tcp" Description="The port for the server to listen on" Type="Port" Display="always" Required="false" Mask="false">9000</Config>
   <Config Name="Projects" Target="/projects" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/projects</Config>
-  <Config Name="Keyring Passphrase" Target="VSCODE_KEYRING_PASS " Default="" Mode="" Description="set a keyring passphrase (to persist account login)" Type="Variable" Display="always" Required="true" Mask="true">sakalambo</Config>
+  <Config Name="Keyring Passphrase" Target="VSCODE_KEYRING_PASS" Default="" Mode="" Description="set a keyring passphrase (to persist account login)" Type="Variable" Display="always" Required="true" Mask="true">sakalambo</Config>
   <Config Name="Appdata" Target="/root/.vscode-server" Default="{2}" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/vscode-server/.vscode-server</Config>
   <Config Name="PUID" Target="PUID" Default="90" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
