@@ -22,7 +22,6 @@ Learn more on the official documentation: https://code.visualstudio.com/docs/rem
   <ExtraParams>--cap-add=IPC_LOCK --hostname vscode</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1659478303</DateInstalled>
   <DonateText>Buy me a coffee</DonateText>
   <DonateLink>https://github.com/sponsors/ahmadnassri</DonateLink>
   <Requires/>
