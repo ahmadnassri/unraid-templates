@@ -19,7 +19,7 @@ Learn more on the official documentation: https://code.visualstudio.com/docs/rem
   <Category>Tools: Productivity:</Category>
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
   <Icon>https://code.visualstudio.com/apple-touch-icon.png</Icon>
-  <ExtraParams>--cap-add=IPC_LOCK</ExtraParams>
+  <ExtraParams>--cap-add=IPC_LOCK --hostname vscode</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1659478303</DateInstalled>
