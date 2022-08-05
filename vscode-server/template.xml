@@ -9,11 +9,13 @@
   <Privileged>true</Privileged>
   <Support>https://forums.unraid.net/topic/126755-support-ahmadnassris-templates/</Support>
   <Project>https://github.com/ahmadnassri/docker-vscode-server</Project>
-  <Overview>&#xD;
-The Visual Studio Code Server is a service you can run on a remote development machine, like your desktop PC or a virtual machine (VM). It allows you to securely connect to that remote machine from anywhere through a vscode.dev URL, without the requirement of SSH.&#xD;
-&#xD;
-This is simply a containerized version of the VS Code Server.&#xD;
-&#xD;
+  <Overview>
+The official Visual Studio Code Server, dockerized!
+
+Visual Studio Code Server can be installed everywhere and easily used through a browser. No desktop application required. All extensions supported.
+
+Note: usage through a "vscode.dev" URL is behind a private preview invite and a limited by a known issue (see container README), so this container will only work with "local" mode for now, which still gives you a fully functioning VS Code instance.
+
 Learn more on the official documentation: https://code.visualstudio.com/docs/remote/vscode-server&#xD;
   </Overview>
   <Category>Tools: Productivity:</Category>
