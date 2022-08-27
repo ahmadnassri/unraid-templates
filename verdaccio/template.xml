@@ -18,7 +18,6 @@ Verdaccio is a simple, zero-config-required local private NPM registry. No need 
   <ExtraParams/>
   <DonateText>Buy me a coffee</DonateText>
   <DonateLink>https://github.com/sponsors/ahmadnassri</DonateLink>
-  <Requires/>
   <Config Name="Port" Target="4873" Default="4873" Mode="tcp" Description="The port for the server to listen on" Type="Port" Display="always" Required="false" Mask="false">4873</Config>
   <Config Name="Config Directory" Target="/verdaccio/conf" Default="" Mode="rw" Description="Directory where config.yaml is stored, leave empty to use default" Type="Path" Display="advanced" Required="false" Mask="false"></Config>
 </Container>

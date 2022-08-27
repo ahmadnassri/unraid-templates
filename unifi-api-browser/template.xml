@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>UniFi-API-Browser</Name>
+  <Repository>ahmadnassri/unifi-api-browser</Repository>
+  <Registry>https://hub.docker.com/r/ahmadnassri/unifi-api-browser</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/126755-support-ahmadnassris-templates/</Support>
+  <Project>https://github.com/Art-of-WiFi/UniFi-API-browser</Project>
+  <Overview>The API Browser lets you pull raw, JSON formatted data from the API running on your UniFi Controller.
+
+**Connecting to Multiple UniFi Controllers:**
+
+Unifi-API-Browser supports multiple controllers. To use them create a copy of 'users-tempalte.php' and 'config-template.php' and mount them as volumes at '/app/config/config.php' &amp; '/app/config/users.php'</Overview>
+  <Category>Network:Management</Category>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <Icon>https://github.com/ubiquiti.png</Icon>
+  <Screenshot>https://user-images.githubusercontent.com/12016131/67584206-64f79380-f74d-11e9-8d3d-6cb414179653.png</Screenshot>
+  <Screenshot>https://user-images.githubusercontent.com/12016131/67584222-6cb73800-f74d-11e9-99fb-e1726944bd24.png</Screenshot>
+  <Screenshot>https://user-images.githubusercontent.com/12016131/67584232-704abf00-f74d-11e9-9907-a1cadd00bf1b.png</Screenshot>
+  <Screenshot>https://user-images.githubusercontent.com/12016131/67586311-9e320280-f751-11e9-9576-c0590c951edc.png</Screenshot>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://github.com/sponsors/ahmadnassri</DonateLink>
+  <Config Name="UI Port" Target="8000" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8002</Config>
+  <Config Name="UniFi Controller Username" Target="CONTROLLER_USER" Default="" Mode="" Description="the user name for access to the Unifi Controller. NOTE: use a 'Local Access' account, not a 'Ubiquiti Account'." Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="UniFi Controller Password" Target="CONTROLLER_PASS" Default="" Mode="" Description="the password for access to the Unifi Controller" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="UniFi Controller IP" Target="CONTROLLER_IP" Default="" Mode="" Description="IP address of the Unifi Controller" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="UniFi Controller Port" Target="CONTROLLER_PORT" Default="443" Mode="" Description="Port if you changed the port UniFi is running on" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="UniFi Controller Name" Target="CONTROLLER_NAME" Default="UniFi Controller" Mode="" Description="name for this controller which will be used in the dropdown menu" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="Enable Debug Logging" Target="DEBUG" Default="false" Mode="" Description="set to 'true' (without quotes) to enable debug output to the browser and the PHP error log when fetching the sites collection after selecting a controller" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="UI Authentication" Target="UI_AUTH" Default="false" Mode="" Description="enable/disable authentication" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="UI Auth Username" Target="UI_USER" Default="admin" Mode="" Description="username to secure the API Browser instance" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="UI Auth Password" Target="UI_PASS" Default="c7ad44cbad762a5da0a452f9e854fdc1e0e7a52a38015f23f3eab1d80b931dd472634dfac71cd34ebc35d16ab7fb8a90c81f975113d6c7538dc69dd8de9077ec" Mode="" Description="Generate a SHA512 of the password you want and put here, you can use a tool like https://sha512.online/ by default the password is 'admin'" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="UI Theme" Target="UI_THEME" Default="darkly" Mode="" Description="your default theme of choice, pick one from the following list: bootstrap, cerulean, cosmo, cyborg, darkly, flatly, journal, lumen, paper readable, sandstone, simplex, slate, spacelab, superhero, united, yeti" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="UI Navbar Class" Target="UI_NAVBAR_CLASS" Default="dark" Mode="" Description="class for the main navigation bar, valid options are: light, dark" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="UI Navbar Background Class" Target="UI_NAVBAR_BG_CLASS" Default="dark" Mode="" Description="class for the main navigation bar background, valid options are: primary, secondary, success, danger, warning, info, light, dark, white, transparent" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+</Container>
