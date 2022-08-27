@@ -6,6 +6,8 @@ Mostly software development tools and utilities.
 
 - [Verdaccio](./verdaccio/): A lightweight Node.js private proxy registry
 - [VS Code Server](./vscode-server/): The Visual Studio Code Server
+- [UniFi API Browser](./unifi-api-browser/): pull raw, JSON formatted data from the API running on your UniFi Controller.
+
 
 ----
 > Author: [Ahmad Nassri](https://www.ahmadnassri.com/) &bull;
