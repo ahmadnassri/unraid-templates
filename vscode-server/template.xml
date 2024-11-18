@@ -24,10 +24,10 @@ Visual Studio Code Server can be installed everywhere and easily used through a 
   <DonateLink>https://github.com/sponsors/ahmadnassri</DonateLink>
   <Requires/>
   <Config Name="Port" Target="8000" Default="8000" Mode="tcp" Description="The port for the server to listen on" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
-  <Config Name="Workspace" Target="/workspace" Default="" Mode="rw" Description="path for your projects" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/workspace</Config>
+  <Config Name="Workspace" Target="/root/workspace" Default="" Mode="rw" Description="path for your projects" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/workspace</Config>
 
-  <Config Name="CLI Data" Target="/root/code/cli-data" Default="" Mode="rw" Description="CLI metadata storage" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/vscode-server/server-data</Config>
-  <Config Name="Server Data" Target="/root/code/server-data" Default="" Mode="rw" Description="server data storage" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/vscode-server/server-data</Config>
-  <Config Name="User Data" Target="/root/code/user-data" Default="" Mode="rw" Description="user data storage" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/vscode-server/user-data</Config>
-  <Config Name="Extensions" Target="/root/code/extensions" Default="" Mode="rw" Description="extensions storage" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/vscode-server/extensions</Config>
+  <Config Name="CLI Data" Target="/root/.vscode/cli-data" Default="" Mode="rw" Description="CLI metadata storage" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/vscode-server/server-data</Config>
+  <Config Name="Server Data" Target="/root/.vscode/server-data" Default="" Mode="rw" Description="server data storage" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/vscode-server/server-data</Config>
+  <Config Name="User Data" Target="/root/.vscode/user-data" Default="" Mode="rw" Description="user data storage" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/vscode-server/user-data</Config>
+  <Config Name="Extensions" Target="/root/.vscode/extensions" Default="" Mode="rw" Description="extensions storage" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/vscode-server/extensions</Config>
 </Container>
