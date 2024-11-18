@@ -10,13 +10,9 @@
   <Support>https://forums.unraid.net/topic/126755-support-ahmadnassris-templates/</Support>
   <Project>https://github.com/ahmadnassri/docker-vscode-server</Project>
   <Overview>
-The official Visual Studio Code Server, dockerized!
+The **official** Visual Studio Code Server, dockerized!
 
 Visual Studio Code Server can be installed everywhere and easily used through a browser. No desktop application required. All extensions supported.
-
-Note: usage through a "vscode.dev" URL is behind a private preview invite and a limited by a known issue (see container README), so this container will only work with "local" mode for now, which still gives you a fully functioning VS Code instance.
-
-Learn more on the official documentation: https://code.visualstudio.com/docs/remote/vscode-server&#xD;
   </Overview>
   <Category>Tools: Productivity:</Category>
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
@@ -27,12 +23,11 @@ Learn more on the official documentation: https://code.visualstudio.com/docs/rem
   <DonateText>Buy me a coffee</DonateText>
   <DonateLink>https://github.com/sponsors/ahmadnassri</DonateLink>
   <Requires/>
-  <Config Name="Port" Target="8000" Default="8000" Mode="tcp" Description="The port for the server to listen on" Type="Port" Display="always" Required="false" Mask="false">9000</Config>
-  <Config Name="Projects" Target="/projects" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/projects</Config>
-  <Config Name="Keyring Passphrase" Target="VSCODE_KEYRING_PASS" Default="" Mode="" Description="set a keyring passphrase (to persist account login)" Type="Variable" Display="always" Required="true" Mask="true">mysecretkey</Config>
-  <Config Name="Server Mode" Target="VSCODE_SERVE_MODE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">local</Config>
-  <Config Name="Appdata" Target="/root/.vscode-server" Default="{2}" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/vscode-server/.vscode-server</Config>
-  <Config Name="PUID" Target="PUID" Default="90" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
-  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
-  <Config Name="UMASK" Target="UMASK" Default="000" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+  <Config Name="Port" Target="8000" Default="8000" Mode="tcp" Description="The port for the server to listen on" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+  <Config Name="Workspace" Target="/root/code/workspace" Default="" Mode="rw" Description="path for your projects" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/workspace</Config>
+
+  <Config Name="CLI Data" Target="/root/code/cli-data" Default="" Mode="rw" Description="CLI metadata storage" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/vscode-server/server-data</Config>
+  <Config Name="Server Data" Target="/root/code/server-data" Default="" Mode="rw" Description="server data storage" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/vscode-server/server-data</Config>
+  <Config Name="User Data" Target="/root/code/user" Default="" Mode="rw" Description="user data storage" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/vscode-server/user-data</Config>
+  <Config Name="Extensions" Target="/root/code/extensions" Default="" Mode="rw" Description="extensions storage" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/vscode-server/extensions</Config>
 </Container>
