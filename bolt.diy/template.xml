@@ -11,7 +11,7 @@
   <Overview>Prompt, run, edit, and deploy full-stack web applications using any LLM you want!</Overview>
   <Category>AI</Category>
   <WebUI>https://[IP]:[PORT:5173]</WebUI>
-  <Icon>https://raw.githubusercontent.com/stackblitz-labs/bolt.diy/refs/heads/main/public/logo.svg</Icon>
+  <Icon>https://raw.githubusercontent.com/ahmadnassri/unraid-templates/refs/heads/master/bolt.diy/bolt.png</Icon>
   <ExtraParams>--hostname bolt.diy</ExtraParams>
   <PostArgs>pnpm run dockerstart --local-protocol https</PostArgs>
   <CPUset/>
