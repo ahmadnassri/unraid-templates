@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>bolt.diy</Name>
+  <Repository>ghcr.io/stackblitz-labs/bolt.diy:latest</Repository>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/126755-support-ahmadnassris-templates/</Support>
+  <Project>https://github.com/stackblitz-labs/bolt.diy</Project>
+  <Overview>Prompt, run, edit, and deploy full-stack web applications using any LLM you want!</Overview>
+  <Category>AI</Category>
+  <WebUI>https://[IP]:[PORT:5173]</WebUI>
+  <Icon>https://raw.githubusercontent.com/stackblitz-labs/bolt.diy/refs/heads/main/public/logo.svg</Icon>
+  <ExtraParams>--hostname bolt.diy</ExtraParams>
+  <PostArgs>pnpm run dockerstart --local-protocol https</PostArgs>
+  <CPUset/>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://github.com/sponsors/ahmadnassri</DonateLink>
+  <Requires/>
+  <Config Type="Port"     Display="always" Required="false" Mask="false" Name="Port" Target="5173" Default="5173" Mode="tcp" Description="The port for the server to listen on" >5173</Config>
+
+  <Config Type="Variable" Display="always" Required="false" Mask="false" Name="GROQ_API_KEY" Target="GROQ_API_KEY" Default="" Mode="" Description="https://console.groq.com/keys"></Config>
+  <Config Type="Variable" Display="always" Required="false" Mask="false" Name="HuggingFace_API_KEY" Target="HuggingFace_API_KEY" Default="" Mode="" Description="https://huggingface.co/settings/tokens"></Config>
+  <Config Type="Variable" Display="always" Required="false" Mask="false" Name="OPENAI_API_KEY" Target="OPENAI_API_KEY" Default="" Mode="" Description="https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key"></Config>
+  <Config Type="Variable" Display="always" Required="false" Mask="false" Name="ANTHROPIC_API_KEY" Target="ANTHROPIC_API_KEY" Default="" Mode="" Description="https://console.anthropic.com/settings/keys"></Config>
+  <Config Type="Variable" Display="always" Required="false" Mask="false" Name="OPEN_ROUTER_API_KEY" Target="OPEN_ROUTER_API_KEY" Default="" Mode="" Description="https://openrouter.ai/settings/keys"></Config>
+  <Config Type="Variable" Display="always" Required="false" Mask="false" Name="GOOGLE_GENERATIVE_AI_API_KEY" Target="GOOGLE_GENERATIVE_AI_API_KEY" Default="" Mode="" Description="https://console.cloud.google.com/apis/credentials"></Config>
+  <Config Type="Variable" Display="always" Required="false" Mask="false" Name="OLLAMA_API_BASE_URL" Target="OLLAMA_API_BASE_URL" Default="" Mode="" Description="DONT USE http://localhost:11434 due to IPV6 issues"></Config>
+  <Config Type="Variable" Display="always" Required="false" Mask="false" Name="OPENAI_LIKE_API_BASE_URL" Target="OPENAI_LIKE_API_BASE_URL" Default="" Mode="" Description="You only need this environment variable set if you want to use OpenAI Like models"></Config>
+  <Config Type="Variable" Display="always" Required="false" Mask="false" Name="OPENAI_LIKE_API_KEY" Target="OPENAI_LIKE_API_KEY" Default="" Mode="" Description="Get your OpenAI Like API Key"></Config>
+  <Config Type="Variable" Display="always" Required="false" Mask="false" Name="TOGETHER_API_BASE_URL" Target="TOGETHER_API_BASE_URL" Default="" Mode="" Description="You only need this environment variable set if you want to use Together AI models"></Config>
+  <Config Type="Variable" Display="always" Required="false" Mask="false" Name="TOGETHER_API_KEY" Target="TOGETHER_API_KEY" Default="" Mode="" Description="Get your Together API Key"></Config>
+  <Config Type="Variable" Display="always" Required="false" Mask="false" Name="DEEPSEEK_API_KEY" Target="DEEPSEEK_API_KEY" Default="" Mode="" Description="You only need this environment variable set if you want to use DeepSeek models through their API"></Config>
+  <Config Type="Variable" Display="always" Required="false" Mask="false" Name="HYPERBOLIC_API_KEY" Target="HYPERBOLIC_API_KEY" Default="" Mode="" Description="https://app.hyperbolic.xyz/settings"></Config>
+  <Config Type="Variable" Display="always" Required="false" Mask="false" Name="HYPERBOLIC_API_BASE_URL" Target="HYPERBOLIC_API_BASE_URL" Default="" Mode="" Description="You only need this environment variable set if you want to use Hyperbolic models"></Config>
+  <Config Type="Variable" Display="always" Required="false" Mask="false" Name="MISTRAL_API_KEY" Target="MISTRAL_API_KEY" Default="" Mode="" Description="https://console.mistral.ai/api-keys/"></Config>
+  <Config Type="Variable" Display="always" Required="false" Mask="false" Name="COHERE_API_KEY" Target="COHERE_API_KEY" Default="" Mode="" Description="https://dashboard.cohere.com/api-keys"></Config>
+  <Config Type="Variable" Display="always" Required="false" Mask="false" Name="LMSTUDIO_API_BASE_URL" Target="LMSTUDIO_API_BASE_URL" Default="" Mode="" Description="Get LMStudio Base URL from LM Studio Developer Console"></Config>
+  <Config Type="Variable" Display="always" Required="false" Mask="false" Name="XAI_API_KEY" Target="XAI_API_KEY" Default="" Mode="" Description="https://x.ai/api"></Config>
+  <Config Type="Variable" Display="always" Required="false" Mask="false" Name="PERPLEXITY_API_KEY" Target="PERPLEXITY_API_KEY" Default="" Mode="" Description="https://www.perplexity.ai/settings/api"></Config>
+  <Config Type="Variable" Display="always" Required="false" Mask="false" Name="AWS_BEDROCK_CONFIG" Target="AWS_BEDROCK_CONFIG" Default="" Mode="" Description="https://console.aws.amazon.com/iam/home"></Config>
+  <Config Type="Variable" Display="always" Required="false" Mask="false" Name="DEFAULT_NUM_CTX" Target="DEFAULT_NUM_CTX" Default="6144" Mode="" Description="Context Size"></Config>
+
+  <Config Type="Variable" Display="advanced" Required="true" Mask="false" Name="NODE_ENV" Target="NODE_ENV" Default="production" Mode="" Description=""></Config>
+  <Config Type="Variable" Display="advanced" Required="true" Mask="false" Name="COMPOSE_PROFILES" Target="COMPOSE_PROFILES" Default="production" Mode="" Description=""></Config>
+</Container>
