@@ -9,7 +9,7 @@
   <Support>https://forums.unraid.net/topic/126755-support-ahmadnassris-templates/</Support>
   <Project>https://github.com/stackblitz-labs/bolt.diy</Project>
   <Overview>Prompt, run, edit, and deploy full-stack web applications using any LLM you want!</Overview>
-  <Category>AI</Category>
+  <Category>AI: Productivity: Tools:</Category>
   <WebUI>https://[IP]:[PORT:5173]</WebUI>
   <Icon>https://raw.githubusercontent.com/ahmadnassri/unraid-templates/refs/heads/master/bolt.diy/bolt.png</Icon>
   <ExtraParams>--hostname bolt.diy</ExtraParams>
